@@ -1,0 +1,33 @@
+body {
+  background-color: whitesmoke;
+}
+
+div.mainContent {
+  padding-top: 50px;
+}
+
+div.content {
+  border-style: solid;
+  padding: 13px;
+  width: 75%;
+  margin: auto;
+}
+
+h3.name {
+  font-family: cursive;
+  text-align: center;
+  /* width: 100%; */
+  border-bottom: 1px solid #000;
+  margin: 10px 0 20px;
+  line-height: 0.1em;
+}
+
+h3 span {
+  background: whitesmoke;
+  padding: 0 10px;
+}
+
+p.content {
+  text-align: justify;
+  padding: 10px;
+}
