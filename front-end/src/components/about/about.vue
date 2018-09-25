@@ -1,11 +1,10 @@
-
 <template>
 
 <div>
     <div class="mainContent">
         <div class="content">
             <div>
-                <h3 class="name" hr align="left" width="50%">
+                <h3 class="name">
                     <span>Autumn Farris</span>
                 </h3>
             </div>
@@ -23,14 +22,12 @@
         </div>
     </div>
 
- <div class="image">
-        <div class="container">
-            <img src="./all-for-love.jpg" class="mx-auto d-block" style="width:50%">
-        </div>
+    <div class="image">
+            <img src="./../../../static/images/all-for-love.jpg">
     </div>
-    </div>
+</div>
 
 </template>
 
 <script lang="js" src="./about.js" />
-<style lang="scss" src="./about.scss"  />
+<style lang="scss" src="./about.scss" />

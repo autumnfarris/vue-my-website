@@ -1,38 +1,44 @@
-$color_wild_sand_approx: whitesmoke;
+$bg-color: whitesmoke;
 $black: #000;
 
-$font_0: cursive;
+$font_0: Cambria;
+$font_1: Cursive;
+$font_3: 'Helvetica Neue';
 
 body {
-	background-color: $color_wild_sand_approx;
+  background-color: $bg-color;
+  font-family: $font_0;
 }
+
 div {
 	&.mainContent {
-		padding-top: 50px;
+    padding-top: 50px;
 	}
 	&.content {
-		border-style: solid;
 		padding: 13px;
-		width: 68%;
-		margin: auto;
-		box-sizing: border-box;
+    font-family: $font_3;
+    line-height: 1.5;
+    width: 65%;
+    box-sizing: border-box;
+    border-style: solid;
+    margin: auto;
 	}
 	&.image {
 		padding: 20px;
-		text-align: center;
+    text-align: center;
 	}
 }
 h3 {
 	&.name {
-		font-family: $font_0;
+		font-family: $font_1;
 		text-align: center;
 		font-size: 28px;
 		border-bottom: 1px solid $black;
-		margin: 10px 0 20px;
+		margin: 20px 0px 2px;
 		line-height: 0.1em;
 	}
 	span {
-		background: $color_wild_sand_approx;
+		background: $bg-color;
 		padding: 0 10px;
 	}
 }
