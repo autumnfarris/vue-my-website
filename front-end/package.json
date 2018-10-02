@@ -12,6 +12,7 @@
   "dependencies": {
     "ts-loader": "^5.1.0",
     "typescript": "^3.0.3",
+    "underscore.string": "^3.3.4",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
