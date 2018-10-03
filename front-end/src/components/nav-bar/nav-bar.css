@@ -1,23 +1,25 @@
 div.nav-bar {
   padding: 20px 25px 40px;
-  border-bottom: 1px solid #cfd4da;
-  width: 80%;
+  width: 85%;
   margin: 0px auto;
 }
 
 nav a{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding: 10px 25px 10px 25px;
   text-decoration: none;
   color: black;
   float: right;
-  letter-spacing: 1px;
-  border-radius: 16% 16% 0% 0%;
+  text-transform: uppercase;
+  font-weight: 525;
+  letter-spacing: .10em;
+  margin-right: 4%;
+  }
+
+  a:hover {
+    color: orangered;
   }
 
 .router-link-exact-active {
-  background-color: white;
-  padding-bottom: 12px;
-  border: 1px solid #bec3c9;
-  border-bottom: none;
+  border-bottom: 3px solid #3d9970;
+  display:inline;
 }

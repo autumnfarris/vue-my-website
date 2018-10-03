@@ -6,10 +6,13 @@ $subTitle_font_color: black;
 $font_0: Cambria;
 $font_1: Georgia;
 
-body {
+@mixin background-style {
 	background-color: $bg_color;
-	font-family: $font_0;
+  font-family: $font_0;
 }
+
+.resume {
+  @include background-style;
 
 div {
   &.flex-container {
@@ -39,8 +42,8 @@ div {
 		font-family: $font_1;
 	}
 	&.columnStyleRight {
-     margin-left: 250px;
-     margin-right: -130px;
+     margin-left: 100px;
+     margin-right: 130px;
 	}
 	&.personalInformation {
 		font-size: 14px;
@@ -80,4 +83,5 @@ ul {
 }
 li {
   margin: 0 0 5px 0;
+}
 }
