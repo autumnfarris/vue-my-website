@@ -14,7 +14,7 @@ body {
 div {
   &.flex-container {
     display: flex;
-    margin: 0px 0px 0px 75px;
+    margin: 0px 0px 0px 195px;
     padding: 60px 0px 60px 60px;
 		text-align: left;
   }
@@ -40,8 +40,9 @@ div {
 		font-family: $font_1;
 	}
 	&.columnStyleRight {
-    // padding-left: 100px;
-    margin-left: 150px;
+     margin-left: 250px;
+     margin-right: -130px;
+
 	}
 	&.personalInformation {
 		font-size: 14px;

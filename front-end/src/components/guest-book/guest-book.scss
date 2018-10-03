@@ -1,26 +1,73 @@
+$black: #000;
 
 $font_0: Cambria;
 $font_1: Cursive;
-$font_3: 'Helvetica Neue';
-$path_background_image: "./../../../static/images/floral-design.jpg";
+$font_3: "Helvetica Neue";
+$path_background_image: "./../../../static/images/floral-vector.png";
+
+$color_celeste_approx: #ccc;
+$submit_button: #4caf50;
+$white: white;
+$transparent_form: transparent;
+$bg-color: whitesmoke;
+
 
 @mixin background-style {
-  height: 100%;
-  background: url($path_background_image) no-repeat center center fixed;
-  background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
+height: 100%;
+background: url($path_background_image) no-repeat left center fixed;
+background-size: 575px;
+text-align: center;
+background-color: $bg-color;
 }
 
-
-
-body {
-@include background-style;
+%extend_1 {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid $color_celeste_approx;
+	border-radius: 4px;
+  box-sizing: border-box;
 }
 
-p.header {
-  font-family: $font_1;
-  text-align: center;
-  font-size: 40px;
-}
+.guest-book {
+  @include background-style;
 
+  p.header {
+    font-family: $font_1;
+    text-align: center;
+    font-size: 40px;
+    color: $black;
+  }
+  form {
+    display: inline-block;
+     background-color: $transparent_form;
+  }
+  input[type=text] {
+    @extend %extend_1;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: $submit_button;
+    color: $white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  div.form {
+    border-radius: 5px;
+    background-color: $transparent_form;
+    padding: 20px;
+  }
+  textarea {
+    @extend %extend_1;
+    resize: none;
+    color: gray;
+    height: 130px;
+  }
+
+}

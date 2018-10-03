@@ -30,7 +30,7 @@
           <p class="content">Deploy and maintain code for accounting application
               <br>Worked closely with developers to manage complex projects
               <br> Performed in a full stack platform environment
-              <br> Participated in daily Scrum events as well as performed as Scrum Master
+              <br> Participated in daily Scrum events as well as performed as Scrum Master.
           </p>
           <br>
           <p class="subTitle">

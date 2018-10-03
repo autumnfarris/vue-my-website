@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="currentPage()">
     <div></div>
     <Navigation></Navigation>
     <router-view/>
@@ -7,22 +7,20 @@
 </template>
 
 <script>
+import dasherize from "underscore.string/dasherize";
 import Navigation from "./components/nav-bar/nav-bar.vue";
+
 export default {
   name: "App",
   components: {
-     Navigation: Navigation
+    Navigation: Navigation
+  },
+  methods: {
+    currentPage: function() {
+      return dasherize(this.$router.currentRoute.name);
+    }
   }
 };
 </script>
 
-<style>
-#app {
-  /* font-family: "Avenir", Helvetica, Arial, sans-serif;
--webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: right;
-  color: #2c3e50;
-  margin-top: 60px; */
-}
-</style>
+<style lang="scss" src="./App.scss"/>
