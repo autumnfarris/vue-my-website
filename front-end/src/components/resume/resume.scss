@@ -1,13 +1,13 @@
-$bg-color: whitesmoke;
-$header-color: #3d9970;
-$achievements-color: rgb(102, 102, 102);
-$subTitle-font-color: black;
+$bg_color: whitesmoke;
+$header_color: #3d9970;
+$achievements_color: rgb(102, 102, 102);
+$subTitle_font_color: black;
 
 $font_0: Cambria;
 $font_1: Georgia;
 
 body {
-	background-color: $bg-color;
+	background-color: $bg_color;
 	font-family: $font_0;
 }
 
@@ -16,7 +16,6 @@ div {
     display: flex;
     margin: 0px 0px 0px 195px;
     padding: 60px 0px 60px 60px;
-		text-align: left;
   }
 	&.nameSpace {
 		margin-bottom: 75px;
@@ -34,7 +33,7 @@ div {
 	}
 	&.title {
 		font-weight: bold;
-		color: $header-color;
+		color: $header_color;
 		padding-top: 25px;
 		padding-bottom: 5px;
 		font-family: $font_1;
@@ -42,7 +41,6 @@ div {
 	&.columnStyleRight {
      margin-left: 250px;
      margin-right: -130px;
-
 	}
 	&.personalInformation {
 		font-size: 14px;
@@ -50,22 +48,22 @@ div {
 	}
 	&.skills {
 		text-align: left;
-		color: $achievements-color;
+		color: $achievements_color;
 	}
 	&.highlights {
-		color: $achievements-color;
+		color: $achievements_color;
 	}
 }
 p {
 	font-size: 15.5px;
-	color: $achievements-color;
+	color: $achievements_color;
 	&.content {
     margin-bottom: 10px;
     line-height: 1.5;
-    text-align: justify;
+    text-align: left;
   }
   &.subTitle {
-    color: $subTitle-font-color;
+    color: $subTitle_font_color;
     font-family: $font_1;
   }
 	&.timeStamp {

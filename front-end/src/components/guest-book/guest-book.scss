@@ -5,19 +5,18 @@ $font_1: Cursive;
 $font_3: "Helvetica Neue";
 $path_background_image: "./../../../static/images/floral-vector.png";
 
-$color_celeste_approx: #ccc;
+$form_label_border: #ccc;
 $submit_button: #4caf50;
 $white: white;
 $transparent_form: transparent;
-$bg-color: whitesmoke;
-
+$bg_color: whitesmoke;
 
 @mixin background-style {
 height: 100%;
 background: url($path_background_image) no-repeat left center fixed;
 background-size: 575px;
 text-align: center;
-background-color: $bg-color;
+background-color: $bg_color;
 }
 
 %extend_1 {
@@ -25,7 +24,7 @@ background-color: $bg-color;
 	padding: 12px 20px;
 	margin: 8px 0;
 	display: inline-block;
-	border: 1px solid $color_celeste_approx;
+	border: 1px solid $form_label_border;
 	border-radius: 4px;
   box-sizing: border-box;
 }

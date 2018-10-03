@@ -1,5 +1,6 @@
-$bg-color: whitesmoke;
+$bg_color: whitesmoke;
 $black: #000;
+$content_color: rgb(109, 109, 109);
 
 $font_0: Cambria;
 $font_1: Cursive;
@@ -8,50 +9,55 @@ $font_3: "Helvetica Neue";
 $path_background_image_right: "./../../../static/images/lavendar-right.jpeg";
 $path_background_image_left: "./../../../static/images/lavendar-left.jpeg";
 
-.about {
-  background-color: $bg-color;
-  font-family: $font_0;
+@mixin background-style {
   height: 100%;
-  background: url($path_background_image_right),url($path_background_image_left) fixed;
+  background: url($path_background_image_right),url($path_background_image_left);
   background-size: 375px;
   background-position: bottom right, bottom left;
   background-repeat: no-repeat;
+  background-color: $bg_color;
+}
+.about {
+@include background-style;
+
+  div {
+    &.mainContent {
+      padding-top: 50px;
+    }
+    &.content {
+      color: $content_color;
+      padding: 13px;
+      font-family: $font_3;
+      line-height: 1.5;
+      width: 55%;
+      box-sizing: border-box;
+      border-style: solid;
+      margin: auto;
+      box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.1);
+    }
+    &.allForLoveImage {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  h3 {
+    &.name {
+      color: $black;
+      font-family: $font_1;
+      text-align: center;
+      font-size: 28px;
+      margin: 20px 0px 2px;
+      line-height: 0.1em;
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,hsla(0,0%,0%,0)), color-stop(50%,hsla(0,0%,0%,1.0)), color-stop(100%,hsla(0,0%,0%,0)));
+    }
+    span {
+      background: $bg_color;
+      padding: 0 10px;
+    }
+  }
+  p.content {
+    padding: 10px;
+  }
 }
 
-div {
-  &.mainContent {
-    padding-top: 50px;
-  }
-  &.content {
-    padding: 13px;
-    font-family: $font_3;
-    line-height: 1.5;
-    width: 55%;
-    box-sizing: border-box;
-    border-style: solid;
-    margin: auto;
-    box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.1);
-  }
-  &.image {
-    padding: 20px;
-    text-align: center;
-  }
-}
-h3 {
-  &.name {
-    font-family: $font_1;
-    text-align: center;
-    font-size: 28px;
-    border-bottom: 1px solid $black;
-    margin: 20px 0px 2px;
-    line-height: 0.1em;
-  }
-  span {
-    background: $bg-color;
-    padding: 0 10px;
-  }
-}
-p.content {
-  text-align: justify;
-  padding: 10px;
-}
+

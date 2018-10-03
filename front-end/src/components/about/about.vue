@@ -8,22 +8,23 @@
                     <span>Autumn Farris</span>
                 </h3>
             </div>
-            <p class="content">My why
+            <p class="content">
+                <br>I am a web developer, world traveler, yogi, and environmentalist.
                 <br>
-                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie, massa ac ullamcorper egestas,
-                elit dui ultrices magna, aliquam tristique lorem urna vel sem. Aenean non eleifend lectus, quis imperdiet
-                massa. Proin hendrerit diam sit amet est euismod viverra. Phasellus ac vestibulum nisl. Curabitur vestibulum
-                semper velit a laoreet. Duis ut lectus id justo consectetur varius. Ut ac cursus turpis. Suspendisse id est
-                pulvinar, porttitor orci ut, vulputate est. Nullam sollicitudin massa eu fermentum aliquet. Nam facilisis
-                faucibus lorem, in pharetra diam tristique id. Nulla pellentesque ex sit amet imperdiet lobortis. Phasellus
-                pretium, lectus non luctus tempor, elit tellus rutrum metus, quis euismod elit nibh id odio. Proin tempus
-                congue neque, eu lacinia velit aliquet quis. Nulla in porttitor enim. Pellentesque gravida purus id enim
-                scelerisque dapibus.</p>
+                <br>My education consists of two bachelors degrees in <i>Computer Information Systems</i> and <i>Communication Studies</i>.
+                <br>
+                <br>I strive to write clean code that is easily understandable and maintainable.  I'm always eager to learn new languages and frameworks to expand my knowledge and advance in the ever evolving nature of technology.
+                <br>
+                <br>My goal is to leave the world better than we found it by focusing on bettering local, national, and worldwide communities.
+                <br>
+                <br>I believe in living as if we were going to die tomorrow and learning as if we would live forever.
+                <br>
+                </p>
         </div>
     </div>
 
-    <div class="image">
-            <img src="./../../../static/images/all-for-love.jpg">
+    <div class="allForLoveImage">
+      <img src="./../../../static/images/all-for-love.jpg">
     </div>
 </div>
 
