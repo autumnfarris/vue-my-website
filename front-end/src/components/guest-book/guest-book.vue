@@ -2,7 +2,7 @@
 <div id="guest-book">
   <p class="header">~ Guest Book ~</p>
 <div id="form">
-  <form>
+  <form action="./guest-book.php" method="POST">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 

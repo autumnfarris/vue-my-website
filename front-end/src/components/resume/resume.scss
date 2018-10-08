@@ -9,6 +9,7 @@ $font_1: Georgia;
 @mixin background-style {
 	background-color: $bg_color;
   font-family: $font_0;
+  padding-top: 25px;
 }
 
 .resume {

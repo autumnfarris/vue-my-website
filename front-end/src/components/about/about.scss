@@ -16,6 +16,7 @@ $path_background_image_left: "./../../../static/images/lavendar-left.jpeg";
   background-position: bottom right, bottom left;
   background-repeat: no-repeat;
   background-color: $bg_color;
+  padding-top: 25px;
 }
 .about {
 @include background-style;
