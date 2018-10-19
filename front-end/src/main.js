@@ -15,7 +15,6 @@ new Vue({
   template: "<App/>",
   computed: {
     currentPage: function() {
-      //  console.log(this.router.currentPage);
       return dasherize(this.router.currentPage.name);
     }
   }

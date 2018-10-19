@@ -41,7 +41,7 @@ padding-top: 25px;
   }
   form {
     display: inline-block;
-     background-color: $transparent_form;
+    background-color: $transparent_form;
   }
   input[type=text] {
     @extend %extend_1;
@@ -61,7 +61,7 @@ padding-top: 25px;
   div.form {
     border-radius: 5px;
     background-color: $transparent_form;
-    padding: 20px;
+    padding: 210px;
   }
   textarea {
     @extend %extend_1;
@@ -69,5 +69,4 @@ padding-top: 25px;
     color: gray;
     height: 130px;
   }
-
 }
